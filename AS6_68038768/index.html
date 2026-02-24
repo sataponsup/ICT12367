@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Gaming Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="logo">NEON STORE</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="cart">🛒 <span id="cartCount">0</span></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+        <h1>LEVEL UP YOUR GAME</h1>
+        <p>RGB Gaming Gear สำหรับเกมเมอร์ตัวจริง</p>
+        <button id="shopBtn">Shop Now</button>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products fade-in" id="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7">
+        <h3>RGB Gaming Mouse</h3>
+        <p>1,590 บาท</p>
+        <button class="addCart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1595225476474-87563907a212">
+        <h3>Mechanical Keyboard</h3>
+        <p>2,990 บาท</p>
+        <button class="addCart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+        <h3>RGB Gaming Headset</h3>
+        <p>2,490 บาท</p>
+        <button class="addCart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1603484477859-abe6a73f9366">
+        <h3>Gaming Mousepad XL</h3>
+        <p>790 บาท</p>
+        <button class="addCart">Add to Cart</button>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact fade-in" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+        <p>📘 Facebook:
+            <a href="https://www.facebook.com/" target="_blank">
+                Pang Satapon Supasueb
+            </a>
+        </p>
+        <p>📧 Email:
+            <a href="mailto:satapon.sup@spumail.net">
+                satapon.sup@spumail.net
+            </a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Neon Gaming Store
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
