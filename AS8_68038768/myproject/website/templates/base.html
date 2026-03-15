@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Coffee Cafe</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+nav{
+background:#4B2E2E;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+header{
+background:#6F4E37;
+color:white;
+text-align:center;
+padding:20px;
+font-size:26px;
+}
+
+.container{
+width:80%;
+margin:auto;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.products{
+display:flex;
+gap:20px;
+}
+
+.product{
+flex:1;
+text-align:center;
+}
+
+.products img{
+width:200px;
+height:150px;
+object-fit:cover;
+border-radius:8px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+}
+
+button{
+padding:10px 20px;
+background:#6F4E37;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#4B2E2E;
+}
+
+footer{
+background:#4B2E2E;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="/">Home</a>
+<a href="/form/">Order</a>
+<a href="/about/">About</a>
+</nav>
+
+<header>
+☕ Coffee Cafe
+</header>
+
+<div class="container">
+
+{% block content %}
+{% endblock %}
+
+</div>
+
+<footer>
+<p>© 2026 Coffee Cafe</p>
+</footer>
+
+</body>
+</html>
