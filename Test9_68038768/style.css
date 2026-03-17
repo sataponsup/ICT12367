@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+}
+
+.banner {
+    background: url('https://via.placeholder.com/1920x600') center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.card img {
+    height: 400px;
+    object-fit: cover;
+}
+
+footer a {
+    font-size: 24px;
+}

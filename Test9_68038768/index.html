@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movie Website</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: sans-serif;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(to right, #000000, #434343);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* รูปหนัง */
+.movie-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* hover */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* footer */
+footer a {
+    font-size: 24px;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: #0d6efd;
+    transform: scale(1.2);
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand">🎬 Movie</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ภาพยนตร์</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">ล้วงลับเวทีลวง</a></li>
+            <li><a class="dropdown-item">เซลล์ขยันพันธุ์เดือด</a></li>
+            <li><a class="dropdown-item">Gundam Seed Freedom</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">ติดต่อเรา</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<section class="banner">
+    <h1>รวมหนังดังสุดมันส์ 🎥</h1>
+</section>
+
+<!-- MOVIES -->
+<div class="container my-5">
+  <div class="row g-4">
+
+    <!-- Movie 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="ล้วงลับเวทีลวง.png" class="movie-img">
+        <div class="card-body">
+          <h5>ล้วงลับเวทีลวง</h5>
+          <button class="btn btn-primary" onclick="openModal('movie1')">ดูรายละเอียด</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="เซลล์ขยันพันธุ์เดือด.png" class="movie-img">
+        <div class="card-body">
+          <h5>เซลล์ขยันพันธุ์เดือด</h5>
+          <button class="btn btn-primary" onclick="openModal('movie2')">ดูรายละเอียด</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="gundam seed freedom.png" class="movie-img">
+        <div class="card-body">
+          <h5>Gundam Seed Freedom</h5>
+          <button class="btn btn-primary" onclick="openModal('movie3')">ดูรายละเอียด</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="movieModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="modalTitle"></h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="container my-5">
+  <h2>เกี่ยวกับเรา</h2>
+  <p>เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำภาพยนตร์และรีวิวหนังใหม่</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container my-5">
+  <h2>ติดต่อเรา</h2>
+  <form>
+    <input type="text" class="form-control mb-3" placeholder="ชื่อ-นามสกุล">
+    <input type="email" class="form-control mb-3" placeholder="อีเมล">
+    <textarea class="form-control mb-3" placeholder="ข้อความ"></textarea>
+    <button class="btn btn-success">ส่งข้อมูล</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-4">
+
+  <a href="https://line.me/ti/p/41bfysIwB_" target="_blank" class="text-white me-3">
+    <i class="fab fa-line"></i>
+  </a>
+
+  <a href="https://www.facebook.com/share/1GDZ3XrVVP/?mibextid=wwXIfr" target="_blank" class="text-white me-3">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://www.instagram.com/p4ngya_?igsh=aHNwZDVibHp6cGpw&utm_source=qr" target="_blank" class="text-white">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <p class="mt-2">© 2025 Movie By 68038768</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function openModal(movie) {
+    const title = document.getElementById("modalTitle");
+    const body = document.getElementById("modalBody");
+
+    let data = {
+        movie1: {
+            title: "ล้วงลับเวทีลวง",
+            content: "<p><b>ผู้กำกับ:</b> A Director</p><p><b>นักแสดง:</b> Actor 1</p>"
+        },
+        movie2: {
+            title: "เซลล์ขยันพันธุ์เดือด",
+            content: "<p><b>ผู้กำกับ:</b> B Director</p><p><b>นักแสดง:</b> Actor 2</p>"
+        },
+        movie3: {
+            title: "Gundam Seed Freedom",
+            content: "<p><b>ผู้กำกับ:</b> C Director</p><p><b>นักแสดง:</b> Kira</p>"
+        }
+    };
+
+    title.innerHTML = data[movie].title;
+    body.innerHTML = data[movie].content;
+
+    let modal = new bootstrap.Modal(document.getElementById('movieModal'));
+    modal.show();
+}
+</script>
+
+</body>
+</html>
