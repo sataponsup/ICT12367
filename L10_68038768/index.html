@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>68038768 Satapon Supasueb</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Banner */
+    .carousel-item {
+      height: 500px;
+    }
+    .carousel-image-1 {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    }
+    .carousel-image-2 {
+      background: url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    }
+    .carousel-image-3 {
+      background: url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    }
+    .carousel-caption h1 {
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    /* Menu cards */
+    .card-img-top {
+      height: 150px;
+      object-fit: cover;
+    }
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+    .badge {
+      font-size: 12px;
+    }
+
+    /* Info box */
+    .info-box {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">ร้านอาหารตามสั่งเจ๊ริว</a>
+      <div class="ms-auto d-flex align-items-center">
+        <span class="me-3">About</span>
+        <span class="me-3">Menu</span>
+        <span class="me-3">Gallery</span>
+        <button class="btn btn-warning">RESERVATION</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <section id="slider">
+    <div
+      id="mySlider"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-indicators">
+        <button
+          data-bs-target="#mySlider"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+        ></button>
+        <button data-bs-target="#mySlider" data-bs-slide-to="1"></button>
+        <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="carousel-caption d-none d-sm-block">
+            <h1>อร่อยเด็ด... ขวัญใจชาวหอ</h1>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-2">
+          <div class="carousel-caption d-none d-sm-block">
+            <h1>วัตถุดิบสดใหม่ ส่งตรงทุกวัน</h1>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-3">
+          <div class="carousel-caption d-none d-sm-block">
+            <h1>เปิดบริการ 08:00 - 20:00 น.</h1>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mySlider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">ก่อนหน้า</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mySlider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">ถัดไป</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="text-center mb-4">Menu</h3>
+        <div class="row g-4">
+          <div class="col-6 col-md-4">
+            <div class="card shadow-sm position-relative">
+              <span class="badge bg-danger position-absolute m-2">NEW</span>
+              <img
+                src="https://images.unsplash.com/photo-1604908176997-431f5d9e1c1e?auto=format&fit=crop&w=400&q=80"
+                class="card-img-top"
+                alt="กะเพราไข่ดาว"
+              />
+              <div class="card-body text-center">
+                <p>กะเพราไข่ดาว</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card shadow-sm position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=400&q=80"
+                class="card-img-top"
+                alt="ข้าวผัดหมู"
+              />
+              <div class="card-body text-center">
+                <p>ข้าวผัดหมู</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card shadow-sm position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1625944525903-c3c7c0c9f5a2?auto=format&fit=crop&w=400&q=80"
+                class="card-img-top"
+                alt="คะน้าหมูกรอบ"
+              />
+              <div class="card-body text-center">
+                <p>คะน้าหมูกรอบ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card shadow-sm position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1555992336-03a23c1b12f0?auto=format&fit=crop&w=400&q=80"
+                class="card-img-top"
+                alt="ต้มยำกุ้ง"
+              />
+              <div class="card-body text-center">
+                <p>ต้มยำกุ้ง</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card shadow-sm position-relative">
+              <span class="badge bg-danger position-absolute m-2">NEW</span>
+              <img
+                src="https://images.unsplash.com/photo-1598514982845-1e0e3b1c3e5f?auto=format&fit=crop&w=400&q=80"
+                class="card-img-top"
+                alt="ไข่เจียวปู"
+              />
+              <div class="card-body text-center">
+                <p>ไข่เจียวปู</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card shadow-sm position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=400&q=80"
+                class="card-img-top"
+                alt="เครื่องดื่ม"
+              />
+              <div class="card-body text-center">
+                <p>เครื่องดื่ม</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4 class="text-center mb-4">Information</h4>
+          <p>
+            <strong>2026.03.26</strong><br />
+            <small>วันนี้กุ้งแม่น้ำเข้าใหม่ สดมากครับ!</small>
+          </p>
+          <hr />
+          <p>
+            <strong>2026.03.20</strong><br />
+            <small>ประกาศ: ร้านหยุดสงกรานต์ 13-15 เม.ย.</small>
+          </p>
+          <hr />
+          <p>
+            <strong>2026.03.15</strong><br />
+            <small>เมนูใหม่: ข้าวไข่ข้นลาวาปูอัด</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-white">
+    68038768 Satapon Supasueb © Food court
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
